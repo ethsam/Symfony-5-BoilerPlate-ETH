@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+    <h3>Mot de passe oublié ?</h3>
+    <p>Demandez à réinitialiser votre mot de passe en renseignant votre mail.</p>
+
+    {{form_start(form)}}
+        {{form_row(form.email)}}
+        <button  type="submit" class="btn btn-primary">Envoyer</button>
+    {{form_end(form)}}
+{% endblock %}

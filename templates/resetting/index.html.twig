@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+    
+    <h1>Renouvellement du mot de passe</h1>
+    {{form_start(form)}}
+        {{form_row(form.plainPassword.first)}}
+        {{form_row(form.plainPassword.second)}}
+        <button class="btn btn-primary"  type="submit">Envoyer</button>
+    {{form_end(form)}}
+{% endblock %}

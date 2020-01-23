@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Activation de votre compte</title>
+</head>
+<body>
+    <p>
+        Bonjour, <br>
+        Cliquez sur ce lien pour activer votre compte.
+        {# pour que le lien fonctionne, il est indispensable que le lien soit absolu. #}
+        <a href="{{absolute_url(path('activate', {'id': user.id, 'token': user.token}))}}">Activer votre compte</a>
+    </p>
+</body>
+</html>
